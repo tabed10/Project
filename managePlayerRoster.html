@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Player Roster</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="w3-container w3-green">
+            <h1>Player Roster</h1>
+          </div>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-6">
+                Name: <br><input id="addName" type="text" name="name"><br>
+                Position: <br><input id="addPosition" type="text" name="price"><br>
+                Image URL: <br><input id="addLink" type="text" name="link"><br>
+                <button onclick="myFunction()">Add Player</button><br><br>
+              </div>
+              <div class="col-sm-6">
+                Remove Player(Index): <br><input id="removePlayer" type="text" name="name"><br>
+                <button onclick="myFunction3()">Remove Player</button><br><br>
+                <button onclick="myFunction2()">Player Roster</button>
+              </div>
+            </div>
+        </div>
+
+        <div id="players" class="jumbotron">
+          <h2>Players</h2>
+          <hr class="my-4">
+          <div class="row">
+            
+          </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
+
+
