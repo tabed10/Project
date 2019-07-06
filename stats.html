@@ -9,10 +9,10 @@
 
     <body>
         <div class="w3-container w3-green">
-            <h1>Player Roster</h1>
-          </div>
+            <h1>Statistics</h1>
+        </div>
 
-          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">Menu</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -45,36 +45,40 @@
                 </li>
               </ul>
             </div>
-          </nav>
+        </nav>
 
-        <div class="container">
-            <div class="row">
-              <div class="col-sm-6">
-                Name: <br><input id="addName" type="text" name="name"><br>
-                Position: <br><input id="addPosition" type="text" name="price"><br>
-                Image URL: <br><input id="addLink" type="text" name="link"><br>
-                <button onclick="myFunction()">Add Player</button><br><br>
-              </div>
-              <div class="col-sm-6">
-                Remove Player(Index): <br><input id="removePlayer" type="text" name="name"><br>
-                <button onclick="myFunction3()">Remove Player</button><br><br>
-                <button onclick="myFunction2()">Player Roster</button>
-              </div>
-            </div>
-        </div>
+        <button onclick="myFunction4()">Competition 1 Table</button><br><br>
+        <button onclick="myFunction5()">Competition 2 Table</button>
 
-        <div id="players" class="jumbotron">
-          <h2>Players</h2>
-          <hr class="my-4">
-          <div class="row">
-            
-          </div>
-        </div>
+        <table class="table" id="statsTable">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Position</th>
+                <th scope="col">Competition</th>
+                <th scope="col">Games Played</th>
+                <th scope="col">Win</th>
+                <th scope="col">Loss</th>
+                <th scope="col">Draw</th>
+                <th scope="col">Goals</th>
+                <th scope="col">Assists</th>
+                <th scope="col">Goals Conceded</th>
+                <th scope="col">Own Goals</th>
+                <th scope="col">Penalties Saved</th>
+                <th scope="col">Penalties Missed</th>
+                <th scope="col">Yellow Cards</th>
+                <th scope="col">Red Cards</th>
+                <th scope="col">Bonus</th>
+                <th scope="col">Total Points</th>
+              </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+        </table>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script type="text/javascript" src="script.js"></script>
     </body>
-</html>
-
-
