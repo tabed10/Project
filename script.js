@@ -180,6 +180,34 @@ function myFunction5(){
   }
 }
 
+function myFunction6() {
+  /*
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  */
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+/*
 function myFunction6(){
   var $button = $(this);
   var oldValue = $button.parent().find("input").val();
@@ -198,3 +226,4 @@ function myFunction6(){
   $button.parent().find("input").val(newVal);
   console.log("working")
 }
+*/
