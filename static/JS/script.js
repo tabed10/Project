@@ -20,7 +20,7 @@ console.log(competitions)
 
 var stat = {gamesPlayed: "", win: "", loss: "", draw: "", goals: "", assists: "", goalsConceded: "", ownGoals: "", penaltiesSaved: "", penaltiesMissed: "", yellowCards: "", redCards: "", bonus: "", totalPoints: ""}
 var player = {name: "", position: "", image: "", stat};
-
+var competition = {name: "", games: "", player}
 console.log(stats)
   
 $("#showBtn").click(function(event){
@@ -182,44 +182,31 @@ function myFunction5(){
   }
 }
 
-function myFunction6() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
 
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
 
 $("#submit").click(function(event){
-  
-  stat.gamesPlayed = $('#gamesPlayed').val();
-  stat.win= $('#win').val();
-  stat.loss= $('#loss').val();
-  stat.draw= $('#draw').val();
-  stat.goals= $('#goals').val();
-  stat.assists= $('#assists').val();
-  stat.goalsConceded= $('#goalsConceded').val();
-  stat.ownGoals= $('#ownGoals').val();
-  stat.penaltiesSaved= $('#penaltiesSaved').val();
-  stat.penaltiesMissed= $('#penaltiesMissed').val();
-  stat.yellowCards= $('#yellowCards').val();
-  stat.redCards= $('#redCards').val();
-  stat.bonus= $('#bonus').val();
-  stat.totalPoints= $('#totalPoints').val();
+  competition.name = $('#competition').val();
+  competition.games = $('#noOfGames').val();
+  competition.player.name = $('#playerName').val();
+  competition.player.stat.gamesPlayed = $('#gamesPlayed').val();
+  competition.player.stat.win= $('#win').val();
+  competition.player.stat.loss= $('#loss').val();
+  competition.player.stat.draw= $('#draw').val();
+  competition.player.stat.goals= $('#goals').val();
+  competition.player.stat.assists= $('#assists').val();
+  competition.player.stat.goalsConceded= $('#goalsConceded').val();
+  competition.player.stat.ownGoals= $('#ownGoals').val();
+  competition.player.stat.penaltiesSaved= $('#penaltiesSaved').val();
+  competition.player.stat.penaltiesMissed= $('#penaltiesMissed').val();
+  competition.player.stat.yellowCards= $('#yellowCards').val();
+  competition.player.stat.redCards= $('#redCards').val();
+  competition.player.stat.bonus= $('#bonus').val();
+  competition.player.stat.totalPoints= $('#totalPoints').val();
   
   $.ajax({
     url: "/updateStatistics",
     method: "POST",
-    data: stat
+    data: competition
   }).done(function(response){
     console.log(response)
     }).fail(function(response){
