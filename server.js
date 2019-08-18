@@ -54,6 +54,10 @@ app.get('/stats',function(req,res){
     res.sendFile(__dirname+'/stats.html')
 })
 
+app.get('/homepage',function(req,res){
+    res.sendFile(__dirname+'/homepage.html')
+})
+
 app.post('/updateStatistics', function(req, res){
     console.log(req.body)
     db.createCollection('statistics', function(err, collection){

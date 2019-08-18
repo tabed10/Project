@@ -46,14 +46,7 @@ $("#showBtn").click(function(event){
         }
       }
     })
-    $.ajax({
-      method:"GET",
-      url:"http://localhost:3000/managePlayerRoster"
-    }).done(function(response){
-      console.log(response);
-    }).fail(function(response){
-      console.log(response.responseText);
-    });
+    
     
 })
 
