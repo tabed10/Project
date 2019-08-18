@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Player Roster</title>
-        <link rel="stylesheet" href="style2.css">
+        <link rel="stylesheet" href="/static/css/style2.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
@@ -24,13 +24,13 @@
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="C:\Users\User\Project\managePlayerRoster.html">Player Roster</a>
+                  <a class="nav-link" href="\..\managePlayerRoster">Player Roster</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="C:\Users\User\Project\stats.html">Statistics</a>
+                    <a class="nav-link" href="\..\stats">Statistics</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="C:\Users\User\Project\updateStatistics.html">Update Statistics</a>
+                  <a class="nav-link" href="\..\updateStatistics">Update Statistics</a>
               </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -52,98 +52,101 @@
 
         <button onclick="myFunction6()">Update</button>
         
-        <!--
-        <form method="post" action="">
+        
+        
           <div>
               <label for="name">Games Played</label>
-              <input type="text" name="french-hens" id="french-hens" value="3">
+              <input type="text" name="games-played" id="gamesPlayed" value="0">
               <button onclick="myFunction6()">+</button>
               <button onclick="myFunction6()">-</button>
           </div>
           <div>
             <label for="name">Win</label>
-            <input type="text" name="wins" id="wins" >
+            <input type="text" name="wins" id="wins" value="0">
             <button onclick="myFunction6()">+</button>
             <button onclick="myFunction6()">-</button>
           </div>
           <div>
             <label for="name">Loss</label>
-            <input type="text" name="french-hens" id="french-hens" value="3">
+            <input type="text" name="loss" id="loss" value="0">
             <button onclick="myFunction6()">+</button>
             <button onclick="myFunction6()">-</button>
           </div>
           <div>
             <label for="name">Draw</label>
-            <input type="text" name="french-hens" id="french-hens" value="3">
+            <input type="text" name="draw" id="draw" value="0">
             <button onclick="myFunction6()">+</button>
             <button onclick="myFunction6()">-</button>
           </div>
           <div>
             <label for="name">Goals</label>
-            <input type="text" name="french-hens" id="french-hens" value="3">
+            <input type="text" name="goals" id="goals" value="0">
             <button onclick="myFunction6()">+</button>
             <button onclick="myFunction6()">-</button>
           </div>
           <div>
             <label for="name">Assists</label>
-            <input type="text" name="french-hens" id="french-hens" value="3">
+            <input type="text" name="assists" id="assists" value="0">
             <button onclick="myFunction6()">+</button>
             <button onclick="myFunction6()">-</button>
           </div>
           <div>
             <label for="name">Goals Conceded</label>
-            <input type="text" name="french-hens" id="french-hens" value="3">
+            <input type="text" name="goals-conceded" id="goalsConceded" value="0">
             <button onclick="myFunction6()">+</button>
             <button onclick="myFunction6()">-</button>
           </div>
           <div>
             <label for="name">Own Goals</label>
-            <input type="text" name="french-hens" id="french-hens" value="3">
+            <input type="text" name="own-goals" id="ownGoals" value="0">
             <button onclick="myFunction6()">+</button>
             <button onclick="myFunction6()">-</button>
           </div>
           <div>
             <label for="name">Penalties Saved</label>
-            <input type="text" name="french-hens" id="french-hens" value="3">
+            <input type="text" name="penalties-saved" id="penaltiesSaved" value="0">
             <button onclick="myFunction6()">+</button>
             <button onclick="myFunction6()">-</button>
           </div>
           <div>
             <label for="name">Penalties Missed</label>
-            <input type="text" name="french-hens" id="french-hens" value="3">
+            <input type="text" name="penalties-missed" id="penaltiesMissed" value="0">
             <button onclick="myFunction6()">+</button>
             <button onclick="myFunction6()">-</button>
           </div>
           <div>
             <label for="name">Yellow Cards</label>
-            <input type="text" name="french-hens" id="french-hens" value="3">
+            <input type="text" name="yellow-cards" id="yellowCards" value="0">
             <button onclick="myFunction6()">+</button>
             <button onclick="myFunction6()">-</button>
           </div>
           <div>
             <label for="name">Red Cards</label>
-            <input type="text" name="french-hens" id="french-hens" value="3">
+            <input type="text" name="red-cards" id="redCards" value="0">
             <button onclick="myFunction6()">+</button>
             <button onclick="myFunction6()">-</button>
           </div>
           <div>
             <label for="name">Bonus</label>
-            <input type="text" name="french-hens" id="french-hens" value="3">
+            <input type="text" name="bonus" id="bonus" value="0">
             <button onclick="myFunction6()">+</button>
             <button onclick="myFunction6()">-</button>
           </div>
           <div>
             <label for="name">Total Points</label>
-            <input type="text" name="french-hens" id="french-hens" value="3">
+            <input type="text" name="total-points" id="totalPoints" value="0">
             <button onclick="myFunction6()">+</button>
             <button onclick="myFunction6()">-</button>
           </div>
           
-          <input type="submit" value="Submit" id="submit">
-      </form>
-      -->
+          <input type="submit" id="submit" value="Submit"> 
+      
+      
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script
+        src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="/static/JS/script.js"></script>
     </body>

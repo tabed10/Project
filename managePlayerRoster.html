@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>Player Roster</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="static/css/style.css">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
@@ -24,14 +24,14 @@
                   <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="C:\Users\User\Project\managePlayerRoster.html">Player Roster</a>
+                  <a class="nav-link" href="\..\managePlayerRoster">Player Roster</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="C:\Users\User\Project\stats.html">Statistics</a>
+                    <a class="nav-link" href="\..\stats">Statistics</a>
                 </li>
               </li>
               <li class="nav-item">
-                  <a class="nav-link" href="C:\Users\User\Project\updateStatistics.html">Update Statistics</a>
+                  <a class="nav-link" href="\..\updateStatistics">Update Statistics</a>
               </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -57,12 +57,12 @@
                 Name: <br><input id="addName" type="text" name="name"><br>
                 Position: <br><input id="addPosition" type="text" name="price"><br>
                 Image URL: <br><input id="addLink" type="text" name="link"><br>
-                <button onclick="myFunction()">Add Player</button><br><br>
+                <button id = "addBtn">Add Player</button><br><br>
               </div>
               <div class="col-sm-6">
                 Remove Player(Index): <br><input id="removePlayer" type="text" name="name"><br>
                 <button onclick="myFunction3()">Remove Player</button><br><br>
-                <button onclick="myFunction2()">Player Roster</button>
+                <button id = "showBtn">Player Roster</button>
               </div>
             </div>
         </div>
@@ -75,9 +75,17 @@
           </div>
         </div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+        
+
+
+        
+
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="/static/JS/script.js"></script>
     </body>
 </html>
 
