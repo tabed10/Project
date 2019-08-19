@@ -19,3 +19,8 @@ To run the code, run:
 node server.js
 
 In the browser open http://localhost:3000/homepage, and you should see the homepage.
+
+Sample Player: 
+Name:Andrea Pirlo 
+Position: Centre Defensive Midfielder 
+Image: https://upload.wikimedia.org/wikipedia/commons/e/ef/Andrea_Pirlo_NYCFC.JPG
