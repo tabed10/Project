@@ -1,6 +1,6 @@
 # Project
 Introduction
-Player Manager is a system that lets you record information about your football team. 
+Player Manager is a system that lets you record information about your football team.
 Record information about individual players and their performance statistics in two seperate competitions.
 <img src="Screenshot (43).png">
 
