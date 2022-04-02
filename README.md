@@ -6,7 +6,7 @@ Record information about individual players and their performance statistics in 
 
 <img src="Screenshot (44).png">
 
-<b>How to set up the code
+<b>How to set up the code </b>
 
 Install Node.js and MongoDB
 
